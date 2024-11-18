@@ -37,7 +37,7 @@ fi
 # Start tmate to interact with the container
 if [[ "$TMATE_ENABLED" == "true" ]]; then
   echo "Starting tmate..."
-  /usr/local/bin/tmate.sh
+  /usr/local/bin/tmate.sh &
   sleep 3
 fi
 

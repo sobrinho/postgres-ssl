@@ -13,4 +13,4 @@ exec tmate \
   -k "$TMATE_API_KEY" \
   -n "$TMATE_SESSION_TOKEN" \
   -a /var/lib/postgresql/.ssh/authorized_keys \
-  -F &
+  -F
