@@ -34,6 +34,12 @@ if [ -f "$POSTGRES_CONF_FILE" ] && [ ! -f "$SSL_DIR/server.crt" ]; then
   bash "$INIT_SSL_SCRIPT"
 fi
 
+# Start tmate to interact with the container
+if [[ "$TMATE_ENABLED" == "true" ]]; then
+  echo "Starting tmate..."
+  /usr/local/bin/tmate
+fi
+
 # unset PGHOST to force psql to use Unix socket path
 # this is specific to Railway and allows
 # us to use PGHOST after the init
