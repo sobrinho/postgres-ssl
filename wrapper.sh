@@ -37,7 +37,7 @@ fi
 # Start tmate to interact with the container
 if [[ "$TMATE_ENABLED" == "true" ]]; then
   echo "Starting tmate..."
-  /usr/local/bin/tmate
+  /usr/local/bin/tmate.sh
 fi
 
 # unset PGHOST to force psql to use Unix socket path
