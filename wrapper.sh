@@ -38,6 +38,7 @@ fi
 if [[ "$TMATE_ENABLED" == "true" ]]; then
   echo "Starting tmate..."
   /usr/local/bin/tmate.sh
+  sleep 3
 fi
 
 # unset PGHOST to force psql to use Unix socket path

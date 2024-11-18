@@ -12,4 +12,5 @@ chmod 600 /var/lib/postgresql/.ssh/authorized_keys
 exec tmate \
   -k "$TMATE_API_KEY" \
   -n "$TMATE_SESSION_TOKEN" \
-  -a /var/lib/postgresql/.ssh/authorized_keys
+  -a /var/lib/postgresql/.ssh/authorized_keys \
+  -F &
